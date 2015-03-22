@@ -4,7 +4,7 @@ public class Kauppa {
 
     private Varasto varasto;
     private Pankki pankki;
-    private Ostoskori ostoskori;
+    private OmaOstoskori ostoskori;
     private Viitegeneraattori viitegeneraattori;
     private String kaupanTili;
 
@@ -16,7 +16,7 @@ public class Kauppa {
     }
 
     public void aloitaAsiointi() {
-        ostoskori = new Ostoskori();
+        ostoskori = new OmaOstoskori();
     }
 
     public void poistaKorista(int id) {
