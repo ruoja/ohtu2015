@@ -40,7 +40,40 @@ public class AuthenticationService {
 
     private boolean invalid(String username, String password) {
         // validity check of username and password
+        if (goodUsername(username) && goodPassword(password)) {
+            return false;
+        }
+        return true;
+    }
 
+    private boolean goodPassword(String password) {
+        if (password.length() < 8 || !hasDigit(password)) {
+            return false;
+        }
+        return true;
+    }
+
+    private boolean goodUsername(String username) {
+        if (username.length() < 3) {
+            return false;
+        }
+        for (int i = 0; i < username.length(); i++) {
+            char c = username.charAt(i);
+            if (!Character.isLetter(c)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean hasDigit(String string) {
+        for (int i = 0; i < string.length(); i++) {
+            char c = string.charAt(i);
+            if (Character.isDigit(c)) {
+                return true;
+            }
+        }
         return false;
     }
+
 }
