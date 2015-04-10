@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package ohtu.verkkokauppa;
 
 import java.util.ArrayList;
@@ -28,17 +27,4 @@ public class Ostoskori {
 
         return hinta;
     }
-=======
-
-package ohtu.verkkokauppa;
-
-public interface Ostoskori {
-
-    int hinta();
-
-    void lisaa(Tuote t);
-
-    void poista(Tuote t);
-    
->>>>>>> b8fdb13364a17f588f1e118e79a823648e4c104e
 }
