@@ -27,6 +27,10 @@
             <artifactId>mockito-all</artifactId>
             <version>1.9.0</version>
             <scope>test</scope>
+<<<<<<< HEAD
+=======
+            <type>jar</type>
+>>>>>>> b8fdb13364a17f588f1e118e79a823648e4c104e
         </dependency>
     </dependencies>
 

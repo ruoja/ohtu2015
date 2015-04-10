@@ -5,12 +5,25 @@ import ohtu.data_access.UserDao;
 import ohtu.io.ConsoleIO;
 import ohtu.io.IO;
 import ohtu.services.AuthenticationService;
+<<<<<<< HEAD
 
+=======
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.stereotype.Component;
+
+@Component
+>>>>>>> b8fdb13364a17f588f1e118e79a823648e4c104e
 public class App {
 
     private IO io;
     private AuthenticationService auth;
 
+<<<<<<< HEAD
+=======
+    @Autowired
+>>>>>>> b8fdb13364a17f588f1e118e79a823648e4c104e
     public App(IO io, AuthenticationService auth) {
         this.io = io;
         this.auth = auth;
@@ -52,12 +65,21 @@ public class App {
     }
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         UserDao dao = new InMemoryUserDao();
         IO io = new ConsoleIO();
         AuthenticationService auth = new AuthenticationService(dao);
         new App(io, auth).run();
     }
     
+=======
+        ApplicationContext ctx = new FileSystemXmlApplicationContext("src/main/resources/spring-context.xml");
+
+        App application = ctx.getBean(App.class);
+        application.run();
+    }
+
+>>>>>>> b8fdb13364a17f588f1e118e79a823648e4c104e
     // testejä debugatessa saattaa olla hyödyllistä testata ohjelman ajamista
     // samoin kuin testi tekee, eli injektoimalla käyttäjän syötteen StubIO:n avulla
     //

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package ohtu.verkkokauppa;
 
 import java.util.*;
@@ -52,4 +53,18 @@ public class Varasto {
         saldot.put(new Tuote(4, "Mikkeller not just another Wit", 7), 40);
         saldot.put(new Tuote(5, "Weihenstephaner Hefeweisse", 4), 15);
     }
+=======
+
+package ohtu.verkkokauppa;
+
+public interface Varasto {
+
+    Tuote haeTuote(int id);
+
+    void otaVarastosta(Tuote t);
+
+    void palautaVarastoon(Tuote t);
+
+    int saldo(int id);
+>>>>>>> b8fdb13364a17f588f1e118e79a823648e4c104e
 }

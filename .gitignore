@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 /viikko2/Ohtu-NhlStatistics1/target/
+=======
+*.xxx
+target/
+OhtuVarasto/target/
+>>>>>>> b8fdb13364a17f588f1e118e79a823648e4c104e

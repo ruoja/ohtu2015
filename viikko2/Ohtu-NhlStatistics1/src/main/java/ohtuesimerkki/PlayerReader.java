@@ -5,7 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+<<<<<<< HEAD
 public class PlayerReader {
+=======
+public class PlayerReader implements Reader {
+>>>>>>> b8fdb13364a17f588f1e118e79a823648e4c104e
 
     private Scanner scanner;
 
