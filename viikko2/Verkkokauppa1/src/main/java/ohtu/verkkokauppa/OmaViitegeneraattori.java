@@ -2,6 +2,7 @@ package ohtu.verkkokauppa;
 
 import org.springframework.stereotype.Component;
 
+@Component
 public class OmaViitegeneraattori implements Viitegeneraattori {
   
     private int seuraava;
